@@ -7,9 +7,13 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'twitter'
+gem 'high_voltage'
 
 group :development, :test do
   gem 'dotenv-rails'
+  gem 'rspec-rails'
+  gem 'capybara', '~> 2.1.0'
+  gem 'shoulda-matchers'
 end
 
 
