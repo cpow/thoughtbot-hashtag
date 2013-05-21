@@ -3,3 +3,9 @@
     <li><%= tweet.text %></li>
   <%end%>
 </ul>
+
+<%= form_for :search, url: searches_path do |form| %>
+  <%= form.label :hashtag %>
+  <%= form.text_field :hashtag %>
+  <%= form.submit 'Search' %>
+<%end%>
